@@ -7,5 +7,5 @@ class CreditCard < ActiveRecord::Base
   include ValidateCard
   include NumberUtils
   
-  attr_accessible :number
+  attr_accessible :number, :position
 end

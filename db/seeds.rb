@@ -1,7 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+CreditCard.delete_all
+index = 0
+File.open("test/fixtures/credit_cards.txt", "r").each_line do |line|
+  index = index + 1
+  num = line.gsub(/\s+/, "")
+  CreditCard.create!(:number => num, :position => index)
+end

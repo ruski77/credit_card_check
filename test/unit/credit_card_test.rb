@@ -19,7 +19,6 @@ class CreditCardTest < ActiveSupport::TestCase
     #print out validated card list to console
     $stdout.puts "\n------------------------------------------"
     CreditCard.order(:position).each do |c|
-      #$stdout.puts "#{c.determine_type}: #{c.number} (#{c.validate})"
       printf("%-12s", "#{c.determine_type}:")
       printf("%-21s", "#{c.number}")
       printf("%-17s", "(#{c.validate})")

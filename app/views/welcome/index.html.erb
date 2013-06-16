@@ -1,0 +1,13 @@
+<% title t(:task) %>
+
+<h1><%= yield(:title) %></h1>
+<table id="cards">
+	<tr>
+		<th><%=t :type %></th><th><%=t :numbers %></th><th><%=t :validity %></th>
+	</tr>
+<% @cards.each do |card| %>
+	<tr>
+		<td><%=card.determine_type%></td><td><%=card.number%></td><td>(<%=card.validate%>)</td>
+	</tr>
+<% end %>
+</table>
