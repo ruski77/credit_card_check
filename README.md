@@ -2,23 +2,25 @@
 
 by Russell Adcock
 
+http://au.linkedin.com/in/russelladcock
+
 Requires Ruby 1.9.3
 
 Command Line Version
+--------------------
 
-bundle install
+Run the following commands.
 
-rake db:migrate
-
-rake test
-
+- bundle install
+- rake db:migrate
+- rake test
 
 Web Version
+-----------
 
-rake db:seed
+Run the following commands.
 
-rake cucumber
-
-rails server
-
-http://localhost:3000/
+- rake db:seed
+- rake cucumber
+- rails server
+- then navigate to http://localhost:3000/

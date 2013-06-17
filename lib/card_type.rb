@@ -1,3 +1,6 @@
+# determine the type of credit card for a given number
+# Valid types are: VISA, AMEX, MasterCard and Discover
+# for any other card types 'Unknown' is returned
 module CardType
   
   def determine_type

@@ -1,3 +1,4 @@
+#validates a credit card by the Luhn algorithm
 module ValidateCard
   
   def validate

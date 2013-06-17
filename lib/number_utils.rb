@@ -1,5 +1,7 @@
+# a set of utility methods for formatting a number
 module NumberUtils
   
+  #remove white space, new line and tab characters from given number
   def remove_white_space(number) 
     if !number.nil?
       return number.gsub(/\s+/, "")
@@ -8,6 +10,7 @@ module NumberUtils
     return ""
   end
   
+  #determine if a given number is odd or even
   def odd_or_even(number)
      if !number.nil?
        if number == 0
@@ -21,6 +24,7 @@ module NumberUtils
      end
   end
   
+  #reverse the given number
   def reverse(number)
     loop = number.length       
     word = ''                  
