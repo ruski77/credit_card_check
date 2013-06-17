@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CreditCardTest < ActiveSupport::TestCase
   
-  test "test_card_list" do
+  test "card_list" do
     #check we have the expected number of cards
     assert_equal 8, CreditCard.count, "Wrong number of credit cards, should be 8"
     
